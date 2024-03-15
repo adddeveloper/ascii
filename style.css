@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.screen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas {
+    border: solid 1px black;
+    margin: 1rem 0;
+}
+
+#cover {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    inset: 0;
+    display: none;
+}
+
+pre {
+    border: solid 1px black;
+}
+
+#cover pre {
+    max-width: 80vw;
+    /* Limit width */
+    max-height: 80vh;
+    /* Limit height */
+    overflow: auto;
+    /* Add scrollbars if content exceeds dimensions */
+    font-size: 8px;
+    /* Adjust font size to zoom out */
+}
+
+#cover div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#cover div svg {
+    margin: 0 1rem;
+}
